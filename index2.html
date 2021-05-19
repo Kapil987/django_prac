@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+<a href="https://www.facebook.com/"> Facebook </a> 
+&nbsp&nbsp <br> <a href="https://www.instagram.com/"> Instagram </a>
+<h1> Welcome to text Analyzer. Enter your text below</h1>
+<!-- action: so that when we hit button this action will be perfromed, textarea,checkbox, 
+is submitted this section to analyze endpoint in views.py--> 
+<form action='/analyze' method='get'> 
+    <textarea name='text' style='margin: 0px; width: 962px; height: 274px;'> </textarea>
+    <br> <input type="checkbox" name="removepunc">  Remove Punctutations
+    <br> <input type="checkbox" name="fullcaps">  UPPERCASE 
+    <br> <input type="checkbox" name="newlineremovar">  New line remover 
+    <br> <input type="checkbox" name="spaceremover">  Space Remover
+    <br> <input type="checkbox" name="extraspaceremover">  Extra Space Remover
+    <br> <input type="checkbox" name="charCount">  Character Counter
+    <br> <button type='submit'> Analyze Text </button>
+</form>
+</body>
+</html>
